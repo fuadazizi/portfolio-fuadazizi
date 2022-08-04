@@ -1,0 +1,41 @@
+// Ini adalah desain statis
+// tidak terpaku pada ukuran layar (responsive)
+
+.left-hero-container {
+	width: 706px;
+	height: 663px;
+	background: #c7d0d9;
+
+	h1 {
+		font-size: 91px;
+		line-height: 109px;
+		color: #ffffff;
+
+		padding-left: 80px;
+		padding-top: 124px;
+	}
+
+	.hero-roles {
+		font-size: 27px;
+		line-height: 140%;
+		color: #F4F7FA;
+		width: fit-content;
+	}
+
+	.hero-skills {
+		font-size: 18px;
+		line-height: 160%;
+		color: #F4F7FA;
+		// margin-left: 80px;
+	}
+
+	span {
+		padding-right: 28px;
+	}
+}
+
+// ini adalah desain dinamis
+// terpaku pada ukuran layar (responsive)
+
+@media only screen and (max-width: 900px) {
+}

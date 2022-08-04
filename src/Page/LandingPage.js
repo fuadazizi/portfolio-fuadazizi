@@ -1,11 +1,33 @@
-import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import Footer from '../Components/Footer'
+import Navbar from '../Components/Navbar'
+
+import About from '../Parts/About'
+import Education from '../Parts/Education'
+import Experience from '../Parts/Experience'
+import LeftHero from '../Parts/LeftHero'
+import Works from '../Parts/Works'
 
 import "./assets/style/landing-page.scss"
 
 export default function LandingPage() {
     return (
-        <div className="p-10 mx-auto bg-neutral-600 ">
-            <p className="para"> NUR FUAD AZIZI </p>
-        </div>
+        <Container fluid>
+            <Navbar />
+            <Row>
+                <Col>
+                    <LeftHero />
+                </Col>
+                <Col>
+
+                </Col>
+            </Row>
+
+            <About />
+            <Works />
+            <Education />
+            <Experience />
+            <Footer />
+        </Container>
     )
 }

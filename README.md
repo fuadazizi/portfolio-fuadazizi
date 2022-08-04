@@ -16,6 +16,9 @@ Tailwind CSS (https://tailwindcss.com/docs/guides/create-react-app)
 Sass (https://sass-lang.com/install)
 # `npm install sass`
 
+React Bootstrap (https://react-bootstrap.github.io/getting-started/introduction)
+# `npm install react-bootstrap bootstrap`
+
 ### Contact me
 Email: nfuadazizi@gmail.com
 Github: fuadazizi
