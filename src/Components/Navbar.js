@@ -2,22 +2,22 @@ import './styles/navbar.scss'
 
 export default function Navbar() {
     return (
-        <div className="navbar-container fixed right-40 w-max">
-            <ul className="flex mt-4 md:flex-row md:space-x-8 sm:flex-row sm:space-x-8 ">
+        <div className="navbar-container">
+            <ul>
                 <li>
-                    About
+                    <a href="#about"> About </a>
                 </li>
                 <li>
-                    Work
+                    <a href="#works"> Works </a>
                 </li>
                 <li>
-                    Education
+                    <a href="#educations"> Educations </a>
                 </li>
                 <li>
-                    Experience
+                    <a href="#experiences"> Experiences </a>
                 </li>
                 <li>
-                    Contact
+                    <a href="#contact"> Contact </a>
                 </li>
             </ul>
         </div>

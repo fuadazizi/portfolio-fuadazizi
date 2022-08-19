@@ -8,7 +8,6 @@ import Leholeh from './images/icon-leholeh.png'
 import './styles/experience.scss'
 
 export default function Experience() {
-    const baseURL = "localhost:3000"
     const expArr = [
         {
             position: "Front-end Developer",
@@ -28,7 +27,7 @@ export default function Experience() {
             position: "UI Designer",
             place: "Leholeh Indonesia",
             period: "June 2021 - Aug 2021",
-            desc: " HTML | CSS | REACTJS",
+            desc: " ADOBE PHOTOSHOP | FIGMA ",
             icon: Leholeh
         },
         {
@@ -47,7 +46,7 @@ export default function Experience() {
                     expArr.map((exp) =>
                         <Col>
                             <div className="experience-card-container">
-                                <img src={exp.icon} className="experience-card-icon" />
+                                <img src={exp.icon} className="experience-card-icon" alt="no-image-found"/>
                                 <p className="experience-card-position"> {exp.position} </p>
                                 <p className="experience-card-place"> {exp.place} </p>
                                 <p className="experience-card-period"> {exp.period} </p>
@@ -61,7 +60,7 @@ export default function Experience() {
     }
 
     return (
-        <Frame title="Experience">
+        <Frame title="Experiences">
             <Col>
                 <ExperienceCard expArr={expArr} />
             </Col>

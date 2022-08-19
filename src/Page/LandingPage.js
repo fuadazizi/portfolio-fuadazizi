@@ -10,6 +10,8 @@ import Works from '../Parts/Works'
 
 import "./assets/style/landing-page.scss"
 
+import Foto from "./assets/images/Foto.png";
+
 export default function LandingPage() {
     return (
         <Container fluid>
@@ -19,14 +21,16 @@ export default function LandingPage() {
                     <LeftHero />
                 </Col>
                 <Col>
-
+                    <section className="landing-photo">
+                        <img src={Foto} alt="no-photo-found"/>
+                    </section>
                 </Col>
             </Row>
 
-            <About />
-            <Works />
-            <Education />
-            <Experience />
+            <section id="about"> <About /> </section>
+            <section id="works"> <Works /> </section>
+            <section id="educations"> <Education /> </section>
+            <section id="experiences"> <Experience id="experiences"/> </section>
             <Footer />
         </Container>
     )

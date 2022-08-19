@@ -11,7 +11,7 @@ export default function Footer() {
     return (
         <Container fluid className="footer-container">
             <Row>
-                <Col xl={8} className="footer-info">
+                <Col xxl={8} xl={6} lg={6} md={5} className="footer-info">
                     <p className="footer-subtitle-top">
                         Have something in mind?
                     </p>
@@ -19,8 +19,19 @@ export default function Footer() {
                         Let's build together.
                     </p>
                 </Col>
-                <Col>
-                    <GetInTouchButton />
+                <Col className="footer-contact">
+                    <Row>
+                        <GetInTouchButton />
+                    </Row>
+                    <Row className="footer-contact-list">
+                        <ul>
+                            <li> <a href="https://www.linkedin.com/in/fuad-azizi/" target="blank" rel="noreferrer"> LinkedIn </a> </li>
+                            <li> <a href="https://twitter.com/fuadazizi_" target="blank" rel="noreferrer"> Twitter </a> </li>
+                            <li> <a href="https://www.instagram.com/fuadazizi_/" target="blank" rel="noreferrer"> Instagram </a> </li>
+                            <li> <a href="https://www.facebook.com/fuadazizii/" target="blank" rel="noreferrer"> Facebook </a> </li>
+                            <li> <a href="https://github.com/fuadazizi" target="blank" rel="noreferrer"> Github </a> </li>
+                        </ul>
+                    </Row>
                 </Col>
             </Row>
         </Container>

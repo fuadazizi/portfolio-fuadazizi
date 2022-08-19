@@ -1,7 +1,21 @@
 .navbar-container {
-	li {
-		font-size: 18px;
-		line-height: 160%;
-		color: #0b0c0e;
+	position: fixed;
+	right: 100px;
+	width: max-content;
+	
+	ul {
+		display: flex;
+		flex-direction: row;
+		margin-top: 40px;
+		li {
+			font-size: 18px;
+			line-height: 160%;
+			color: #0b0c0e;
+			margin-right: 30px;
+
+			a:hover {
+                color: rgb(189, 189, 189);
+			}
+		}
 	}
 }

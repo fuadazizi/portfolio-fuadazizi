@@ -34,7 +34,7 @@ export default function Education() {
     }
 
     return (
-        <Frame title="Education">
+        <Frame title="Educations">
             <Col>
                 <EducationSection eduArr={eduArr} />
             </Col>
