@@ -1,39 +1,43 @@
-import { Container, Row, Col } from 'react-bootstrap'
-import "./styles/footer.scss"
+import React from 'react'
 
-function GetInTouchButton() {
-    return (
-        <button className="footer-get-touch"> Get in Touch </button>
-    )
-}
+import "../Assets/Styles/footer.scss";
 
 export default function Footer() {
-    return (
-        <Container fluid className="footer-container">
-            <Row>
-                <Col xxl={8} xl={6} lg={6} md={5} className="footer-info">
-                    <p className="footer-subtitle-top">
-                        Have something in mind?
-                    </p>
-                    <p className="footer-subtitle-btm">
-                        Let's build together.
-                    </p>
-                </Col>
-                <Col className="footer-contact">
-                    <Row>
-                        <GetInTouchButton />
-                    </Row>
-                    <Row className="footer-contact-list">
-                        <ul>
-                            <li> <a href="https://www.linkedin.com/in/fuad-azizi/" target="blank" rel="noreferrer"> LinkedIn </a> </li>
-                            <li> <a href="https://twitter.com/fuadazizi_" target="blank" rel="noreferrer"> Twitter </a> </li>
-                            <li> <a href="https://www.instagram.com/fuadazizi_/" target="blank" rel="noreferrer"> Instagram </a> </li>
-                            <li> <a href="https://www.facebook.com/fuadazizii/" target="blank" rel="noreferrer"> Facebook </a> </li>
-                            <li> <a href="https://github.com/fuadazizi" target="blank" rel="noreferrer"> Github </a> </li>
-                        </ul>
-                    </Row>
-                </Col>
-            </Row>
-        </Container>
-    )
-}
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    <>
+      <div className="bg-dark-green" id="go-top">
+        <div className="text-center text-white" onClick={scrollToTop}>
+          <p className="fs-medium mb-1">End of Page</p>
+          <p className="fs-medium">(Click to back to top)</p>
+        </div>
+      </div>
+      <div id="footer">
+        <div className="container text-white">
+          <div className="topper row fs-medium justify-content-end">
+            <div className="ml-auto">
+              <p className="text-end" id="hooker-text">
+                Have something in mind?
+                <br /> Let's collaborate!
+              </p>
+            </div>
+          </div>
+          <div className="downer row fs-regular">
+            <div className="col">
+              <p>© 2024 Nur Fuad Azizi</p>
+            </div>
+            <div className="col d-flex justify-content-end" id="socmed">
+              <span><a href="https://id.linkedin.com/in/fuad-azizi">LinkedIn</a></span>
+              <span><a href="https://github.com/fuadazizi">Github</a></span>
+              <span><a href="https://instagram.com/fuadazizi_">Instagram</a></span>
+              <span><a href="mailto:nfuadazizi@gmail.com">Email</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};

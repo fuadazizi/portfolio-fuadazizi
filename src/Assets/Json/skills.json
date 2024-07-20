@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "skill": "javascript, html, css",
+        "image": "assets/images/skills/html.png",
+        "meter": "90"
+    },
+    {
+        "id": 2,
+        "skill": "php",
+        "image": "assets/images/skills/php.png",
+        "meter": "78"
+    },
+    {
+        "id": 3,
+        "skill": "laravel",
+        "image": "assets/images/skills/laravel.png",
+        "meter": "75"
+    },
+    {
+        "id": 4,
+        "skill": "bootstrap",
+        "image": "assets/images/skills/bootstrap.png",
+        "meter": "83"
+    },
+    {
+        "id": 5,
+        "skill": "mysql",
+        "image": "assets/images/skills/mysql.png",
+        "meter": "67"
+    },
+    {
+        "id": 6,
+        "skill": "sass",
+        "image": "assets/images/skills/sass.png",
+        "meter": "55"
+    },
+    {
+        "id": 7,
+        "skill": "tailwind",
+        "image": "assets/images/skills/tailwind.png",
+        "meter": "45"
+    },
+    {
+        "id": 8,
+        "skill": "reactjs",
+        "image": "assets/images/skills/react.png",
+        "meter": "50"
+    }
+]

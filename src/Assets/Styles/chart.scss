@@ -1,0 +1,36 @@
+@import "variables";
+
+#skill-chart {
+    position: relative;
+    margin-bottom: 14px;
+    .img {
+        width: 100px;
+        height: 80px;
+        z-index: 2;
+        position: inherit;
+
+        img {
+            width: 100px;
+            height: 80px;
+            object-fit: contain;
+        }
+    }
+
+    .meter {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        right: 0;
+
+        z-index: 1;
+        width: calc(100% - 50px);
+        height: 30px;
+        border: 2px solid $bolder-green;
+        border-radius: 30px;
+
+        .fillbar {
+            transition: 1s ease-out;
+        }
+    }
+}

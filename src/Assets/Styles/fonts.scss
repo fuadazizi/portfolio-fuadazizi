@@ -1,0 +1,103 @@
+// @import "bootstrap/scss/bootstrap";
+
+// IMPORT FONT
+@font-face {
+  font-family: "fs-thin";
+  src: url(../Font/Fira_Sans/FiraSans-Thin.ttf);
+}
+@font-face {
+  font-family: "fs-light";
+  src: url(../Font/Fira_Sans/FiraSans-Light.ttf);
+}
+@font-face {
+  font-family: "fs-regular";
+  src: url(../Font/Fira_Sans/FiraSans-Regular.ttf);
+}
+@font-face {
+  font-family: "fs-medium";
+  src: url(../Font/Fira_Sans/FiraSans-Medium.ttf);
+}
+@font-face {
+  font-family: "fs-bold";
+  src: url(../Font/Fira_Sans/FiraSans-Bold.ttf);
+}
+@font-face {
+  font-family: "bn-regular";
+  src: url(../Font/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: "o-thin";
+  src: url(../Font/Outfit/static/Outfit-Thin.ttf);
+}
+@font-face {
+  font-family: "o-light";
+  src: url(../Font/Outfit/static/Outfit-Light.ttf);
+}
+@font-face {
+  font-family: "o-regular";
+  src: url(../Font/Outfit/static/Outfit-Regular.ttf);
+}
+@font-face {
+  font-family: "o-medium";
+  src: url(../Font/Outfit/static/Outfit-Medium.ttf);
+}
+@font-face {
+  font-family: "o-bold";
+  src: url(../Font/Outfit/static/Outfit-Bold.ttf);
+}
+
+.fs-thin {
+  font-family: "fs-thin";
+  font-style: normal;
+}
+
+.fs-light {
+  font-family: "fs-light";
+  font-style: normal;
+}
+
+.fs-regular {
+  font-family: "fs-regular";
+  font-style: normal;
+}
+
+.fs-medium {
+  font-family: "fs-medium";
+  font-style: normal;
+}
+
+.fs-bold {
+  font-family: "fs-bold";
+  font-style: normal;
+}
+
+.bn-regular {
+  font-family: "bn-regular";
+  font-style: normal;
+}
+
+.o-thin {
+  font-family: "o-thin";
+  font-style: normal;
+}
+
+.o-light {
+  font-family: "o-light";
+  font-style: normal;
+}
+
+.o-regular {
+  font-family: "o-regular";
+  font-style: normal;
+}
+
+.o-medium {
+  font-family: "o-medium";
+  font-style: normal;
+}
+
+.o-bold {
+  font-family: "o-bold";
+  font-style: normal;
+}
+

@@ -1,0 +1,33 @@
+#navbar {
+    z-index: 9999;
+    .container {
+        height: 70px;
+
+        #menu {
+            gap: 30px;
+            span {
+                float: right;
+                font-family: "fs-medium";
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    
+}
+@media (min-width: 321px) and (max-width: 480px) {
+    
+}
+@media (min-width: 576px) and (max-width: 768px) {
+     #navbar {
+        .container {
+            #menu {
+                gap: 10px;
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

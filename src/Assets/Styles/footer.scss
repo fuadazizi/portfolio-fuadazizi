@@ -1,0 +1,41 @@
+@import 'variables';
+
+#go-top {
+    margin-top: 60px;
+    padding-block: 5px;
+    bottom: -30px;
+    position: relative;
+    transition: 0.1s ease-out;
+    cursor: pointer;
+
+    &:hover {
+        bottom: 0px;
+    }
+}
+
+#footer {
+    position: relative;
+    z-index: 2;
+    background-color: $black-green;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+    .container {
+        .topper {
+            #hooker-text {
+                font-size: 32px;
+            }
+        }
+        .downer {
+            margin-top: 35px;
+
+            #socmed {
+                color: white;
+                column-gap: 20px;
+            }
+            a {
+                color: white;
+            }
+        }
+    }
+}
