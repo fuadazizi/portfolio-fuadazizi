@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import education from "../Assets/Icons/education.svg";
+import work from "../Assets/Icons/work.svg";
+
 import "../Assets/Styles/expcard.scss";
 
 export default function ExpCard({ exp }) {
@@ -30,24 +33,24 @@ export default function ExpCard({ exp }) {
 			<div className="card-back d-flex justify-content-center align-items-center">
 				{exp["type"] === "education" ? (
 					<img
-						src="assets/images/icons/education.svg"
+						src={education}
 						alt="education"
 						width="125px"
 					/>
 				) : (
-					<img src="assets/images/icons/work.svg" alt="work" width="120px" />
+					<img src={work} alt="work" width="120px" />
 				)}
 			</div>
 			<div className="card-front position-relative">
 				<div className="mini-icon position-absolute">
 					{exp["type"] === "education" ? (
 						<img
-							src="assets/images/icons/education.svg"
+							src={education}
 							alt="education"
 							width="30px"
 						/>
 					) : (
-						<img src="assets/images/icons/work.svg" alt="work" width="30px" />
+						<img src={work} alt="work" width="30px" />
 					)}
 				</div>
 				<div className="content d-flex flex-column align-items-center justify-content-between h-100">

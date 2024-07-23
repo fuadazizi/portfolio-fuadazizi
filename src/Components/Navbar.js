@@ -10,7 +10,7 @@ export default function Navbar() {
 				<Row className="h-100">
 					<Col className="h-100">
 						<a className="navbar-brand" href="#">
-							<img src="assets/images/logo.png" alt="Bootstrap" height="65" />
+							<img src="logo.png" alt="Bootstrap" height="65" />
 						</a>
 					</Col>
 					<Col
