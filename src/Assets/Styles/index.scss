@@ -12,76 +12,105 @@ h3,
 h4,
 h5,
 h6 {
-    margin-bottom: 0;
-    line-height: normal;
+	margin-bottom: 0;
+	line-height: normal;
 }
 
 p {
-    font-family: "fs-regular";
-    font-size: 20px;
+	font-family: "fs-regular";
+	font-size: 24px;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 button {
-    background-color: transparent;
-    border: none;
+	background-color: transparent;
+	border: none;
 }
 
 li {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 h2 {
-    font-family: "fs-medium";
-    font-size: 48px;
-    color: $indigo;
+	font-family: "fs-medium";
+	font-size: 48px;
+	color: $indigo;
 }
 
 h3 {
-    font-family: "fs-medium";
-    font-size: 40px;
-    color: $indigo;
+	font-family: "fs-medium";
+	font-size: 40px;
+	color: $indigo;
 }
 
 .container {
-    width: auto;
-    padding: 0;
-    margin-inline: 150px;
+	width: auto;
+	margin-inline: 150px;
+	padding: 70px 0 70px 0;
 }
 
 .super-container {
-    background: $light-grey;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
-    padding-block: 50px;
+	background: $light-grey;
+	box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
+	padding-block: 70px;
 }
 
 // RESPONSIVE
-@media (max-width: 320px) {
-    .container {
-        margin-inline: 20px;
-    }
-}
-@media (min-width: 321px) and (max-width: 480px) {
-    .container {
-        margin-inline: 30px;
-    }
-}
-@media (min-width: 481px) and (max-width: 768px) {
-    .container {
-        margin-inline: 50px;
-    }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-    .container {
-        margin-inline: 100px;
-    }
+
+@media (max-width: 1024px) {
+	.container {
+		margin-inline: 100px;
+	}
+	h2 {
+		font-size: 38px;
+	}
+
+	h3 {
+		font-size: 30px;
+	}
+	p {
+		font-family: "fs-regular";
+		font-size: 18px;
+	}
 }
 
+@media (max-width: 768px) {
+	.container {
+		margin-inline: 50px;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		margin-inline: 30px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+
+	h3 {
+		// font-size: 24px;
+	}
+	p {
+		font-family: "fs-regular";
+		font-size: 12px;
+	}
+
+	.super-container {
+		padding-block: 30px;
+	}
+}
+
+@media (max-width: 320px) {
+	.container {
+		margin-inline: 20px;
+	}
+}
 
 // @tailwind base;
 // @tailwind components;

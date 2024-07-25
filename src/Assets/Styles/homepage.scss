@@ -1,55 +1,138 @@
-#part-1 {
-    height: 500px;
-    .container {
-        h1 {
-            font-size: 64px;
-            margin-bottom: 21px;
-        }
-        h5 {
-            font-size: 40px;
-        }
-        p {
-            font-size: 20px;
-        }
-    }
+@import "fonts";
+@import "variables";
+
+#hero {
+	height: 500px;
+	.container {
+		h1 {
+			font-size: 64px;
+			margin-bottom: 21px;
+		}
+		h5 {
+			font-size: 40px;
+		}
+		p {
+			font-size: 20px;
+		}
+	}
 }
 
-#part-2 {
-    .container {
-        padding: 60px 0 64px 0;
-        h3 {
-            margin-bottom: 24px;
-        }
-        .rounded-circle {
-            padding: 10px;
-            width: fit-content;
-            height: fit-content;
-        }
-    }
+#profile {
+	.container {
+		h3 {
+			margin-bottom: 24px;
+		}
+		.rounded-circle {
+			width: fit-content;
+			height: fit-content;
+			max-width: 320px;
+			max-height: 320px;
+			background-image: url(../Images/Foto.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			border: 10px solid $light-green;
+			aspect-ratio: 1/1;
+
+			img {
+				max-height: 300px;
+				max-width: 300px;
+				height: auto;
+			}
+		}
+	}
 }
 
-#part-3 {
-    .container-fluid {
-        .card-carousel {
-            gap: 50px;
-            margin-top: 80px;
-            margin-bottom: 24px;
-        }
-    }
+#experiences {
+	.container-fluid {
+		.card-container {
+			gap: 50px;
+			margin-top: 60px;
+
+			.row {
+				row-gap: 24px;
+			}
+		}
+	}
 }
 
-#part-4 {
-    padding-block: 82px;
+#works {
+	.container {
+		row-gap: 80px;
+	}
 }
 
-#part-5 {
-    //
+#hobbies {
+	//
 }
 
-#part-6 {
-    padding-block: 60px;
+#skills {
+	.card-container {
+		margin-top: 32px;
+	}
+}
 
-    h2 {
-        margin-bottom: 50px;
-    }
+// RESPONSIVE
+
+@media (max-width: 1024px) {
+	#hero {
+		height: 400px;
+		.container {
+			h1 {
+				font-size: 52px;
+				margin-bottom: 14px;
+			}
+			h5 {
+				font-size: 30px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+
+	#experiences {
+		.row {
+			--bs-gutter-x: 0 !important;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	#hero {
+		height: 300px;
+	}
+}
+
+@media (max-width: 480px) {
+	#hero {
+		.container {
+			h1 {
+				font-size: 40px;
+				margin-bottom: 4px;
+			}
+			h5 {
+				font-size: 22px;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+
+	#works {
+		.container {
+			row-gap: 74px;
+		}
+	}
+
+	#experiences {
+		.container-fluid {
+			.card-container {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 320px) {
 }

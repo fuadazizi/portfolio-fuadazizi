@@ -25,11 +25,13 @@
         -ms-user-select: none;
 
         &:hover {
-            outline: 4px solid $black-green;
+            outline: 4px solid $dark-green;
         }
     }
 
-    .card-back {}
+    .card-back {
+        
+    }
 
     .card-front {
         transform: rotateY(180deg);
@@ -48,11 +50,11 @@
                 font-size: 10px;
             }
             .card-desc {
-                font-size: 14px;
+                font-size: 16px;
                 display: -webkit-box;
-                -webkit-line-clamp: 5;
-                -webkit-box-orient: vertical;  
-                overflow: hidden;
+                // -webkit-line-clamp: 5;
+                // -webkit-box-orient: vertical;  
+                // overflow: hidden;
             }
         }
     }
@@ -74,4 +76,38 @@
     .card-back {
         scale: 0.98;
     }
+}
+
+// RESPONSIVE
+@media (max-width: 1024px) {
+    // small desktop
+}
+
+@media (max-width: 768px) {
+    // tablet
+}
+
+@media (max-width: 480px) {
+    .exp-card {
+        width: 250px;
+        height: 300px;
+
+        .mini-icon {
+            img {
+                // height: 20px;
+                // width: 20px;
+                size: 20px;
+            }
+        }
+
+        .content {
+            img {
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    // very small phone
 }

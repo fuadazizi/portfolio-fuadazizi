@@ -6,7 +6,7 @@ import "../Assets/Styles/navbar.scss";
 export default function Navbar() {
   return (
 		<div className="bg-dark-green text-white position-sticky top-0" id="navbar">
-			<Container>
+			<Container className="p-0">
 				<Row className="h-100">
 					<Col className="h-100">
 						<a className="navbar-brand" href="#">
@@ -17,10 +17,18 @@ export default function Navbar() {
 						className="h-100 d-none d-sm-flex align-items-center justify-content-end"
 						id="menu"
 					>
-						<span> About </span>
-						<span> Gallery </span>
-						<span> Contact </span>
-						<span> Blog </span>
+						<a href="#profile">
+							<span> Profile </span>
+						</a>
+						<a href="#experiences">
+							<span> Experiences </span>
+						</a>
+						<a href="#works">
+							<span> Works </span>
+						</a>
+						<a href="#hobbies">
+							<span> Things </span>
+						</a>
 					</Col>
 				</Row>
 			</Container>

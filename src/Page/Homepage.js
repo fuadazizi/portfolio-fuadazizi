@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Ratio } from "react-bootstrap";
 
 // Internal component
 import Footer from "../Components/Footer";
@@ -23,8 +23,8 @@ export default function Homepage() {
 	return (
 		<>
 			<Navbar />
-			<div className="super-container d-flex" id="part-1">
-				<Container className="d-flex flex-col justify-content-center flex-column w-100">
+			<div className="super-container d-flex" id="hero">
+				<Container className="d-flex flex-col justify-content-center flex-column w-100 p-0">
 					<Row className="h-100">
 						<Col className="d-flex justify-content-center flex-column">
 							<h1 className="fs-bold color-indigo">Greetings!</h1>
@@ -35,17 +35,17 @@ export default function Homepage() {
 								A passionate programmer and web developer
 							</p>
 						</Col>
-						<Col className="d-flex justify-content-end align-items-end">
+						{/* <Col className="d-flex justify-content-end align-items-end">
 							<img src={computer} alt="computer" width="200px" />
-						</Col>
+						</Col> */}
 					</Row>
 				</Container>
 			</div>
 
-			<div id="part-2">
-				<div className="container d-flex flex-col justify-content-center flex-column">
-					<div className="row">
-						<div className="col-12 col-lg-7">
+			<div className="d-flex justify-content-center" id="profile">
+				<Container className="d-flex flex-col justify-content-center flex-column">
+					<Row className="justify-content-center m-0">
+						<Col xs={12} md={7} className="mb-4 px-0">
 							<h3>Brief Profile of Me</h3>
 							<p>
 								I started code at 18 in college. I have loved coding since then.
@@ -60,47 +60,63 @@ export default function Homepage() {
 								Photoshop, Adobe Illustrator, and Figma, as well as video
 								editing like Adobe Premiere Pro and Filmora.
 							</p>
-						</div>
-						<div className="col-12 col-lg-5 d-flex justify-content-center">
-							<div className="rounded-circle bg-light-green">
-								<img
+						</Col>
+						<Col
+							xs={6}
+							md={5}
+							className="d-flex justify-content-center align-items-center flex-wrap"
+						>
+							<div className="rounded-circle w-100 m-0">
+								{/* <img
 									src="assets/images/fuad.png"
-									height="300px"
 									alt="photo-fuad"
-								/>
+								/> */}
 							</div>
-						</div>
-					</div>
-				</div>
+						</Col>
+					</Row>
+				</Container>
 			</div>
 
-			<div className="super-container" id="part-3">
+			<div className="super-container" id="experiences">
 				<Container fluid>
 					<div className="text-center">
 						<h2>My Experience</h2>
 					</div>
-					<div className="card-carousel d-flex flex-row justify-content-center">
-						{experiencesData.map((exp, index) => (
-							<ExpCard key={index} exp={exp} />
-						))}
-					</div>
+					<Container className="card-container d-flex flex-row justify-content-center p-0 mx-auto">
+						<Row>
+							{experiencesData.map((exp, index) => (
+								<Col
+									xs={12}
+									md={6}
+									xxl={3}
+									className="d-flex justify-content-center"
+									key={index}
+								>
+									<ExpCard key={index} exp={exp} />
+								</Col>
+							))}
+						</Row>
+					</Container>
 				</Container>
 			</div>
 
-			<div id="part-4">
-				<Container>
+			<div className="d-flex justify-content-center" id="works">
+				<Container className="d-flex flex-column">
 					<h3>My Works</h3>
 					{showcasesData.map((show, index) => (
 						<Showcase
 							key={index}
 							show={show}
-							type={index % 2 == 0 ? "right" : "left"}
+							type={index % 2 === 0 ? "right" : "left"}
 						/>
 					))}
 				</Container>
 			</div>
-			<div className="super-container" id="part-5">
-				<Container>
+			<div
+				className="super-container d-flex justify-content-center"
+				id="hobbies"
+			>
+				<Container className="p-0">
 					<Row>
 						<h3> What Else? </h3>
 						<p className="fs-regular mt-2">
@@ -128,18 +144,19 @@ export default function Homepage() {
 				</Container>
 			</div>
 
-			<div id="part-6">
+			<div id="skills">
 				<Container className="text-center">
 					<Row>
 						<h2>Things I'm Good at</h2>
 					</Row>
-					<Row className="justify-content-center">
+					<Row className="card-container justify-content-center">
 						{skillsData.map((skill, index) => (
 							<Col
 								xs={6}
 								md={4}
 								lg={3}
 								className="mb-5 d-flex justify-content-center"
+								key={index}
 							>
 								<SkillCard key={index} skill={skill} />
 							</Col>
