@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import "../Assets/Styles/footer.scss";
+import "../Assets/Styles/component/footer.scss";
 
 export default function Footer() {
 	const scrollToTop = () => {

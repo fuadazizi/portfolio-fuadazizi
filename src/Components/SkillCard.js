@@ -1,7 +1,7 @@
 import React from "react";
-import { Col, Ratio } from "react-bootstrap";
+import { Ratio } from "react-bootstrap";
 
-import "../Assets/Styles/skillcard.scss";
+import "../Assets/Styles/component/skillcard.scss";
 
 export default function SkillCard({ skill }) {
 	return (

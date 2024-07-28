@@ -1,9 +1,10 @@
 import React, { useEffect, useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import { Row } from "react-bootstrap";
 
-import "../Assets/Styles/showcase.scss";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import dots from "../Assets/Icons/dot-expand.svg";
+import "../Assets/Styles/component/showcase.scss";
 
 export default function Showcase({ show, type }) {
 	const [hasBeenInView, setHasBeenInView] = useState(false);
@@ -36,8 +37,8 @@ export default function Showcase({ show, type }) {
 					className="showcase-container bg-white d-flex flex-wrap position-relative flex-column"
 					ref={workShowcaseRef}
 					style={{
-						right: hasBeenInView && type == "left" ? "10px" : "",
-						left: hasBeenInView && type == "right" ? "10px" : "",
+						right: hasBeenInView && type === "left" ? "10px" : "",
+						left: hasBeenInView && type === "right" ? "10px" : "",
 						bottom: hasBeenInView ? "10px" : "",
 					}}
 				>
@@ -65,8 +66,7 @@ export default function Showcase({ show, type }) {
 						/>
 					</div>
 				</div>
-				<div className="back-shadow position-absolute h-100 w-100 start-0 top-0 bg-dark-green">
-				</div>
+				<div className="back-shadow bg-dark-green position-absolute h-100 w-100 start-0 top-0"></div>
 			</div>
 		</Row>
 	);

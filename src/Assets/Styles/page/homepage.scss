@@ -1,5 +1,5 @@
-@import "fonts";
-@import "variables";
+@import "../fonts";
+@import '../variables';
 
 #hero {
 	height: 500px;
@@ -28,7 +28,7 @@
 			height: fit-content;
 			max-width: 320px;
 			max-height: 320px;
-			background-image: url(../Images/Foto.png);
+			background-image: url(../../Images/Foto.png);
 			background-repeat: no-repeat;
 			background-size: contain;
 			border: 10px solid $light-green;
@@ -99,6 +99,7 @@
 @media (max-width: 768px) {
 	#hero {
 		height: 300px;
+		margin-top: 50px;
 	}
 }
 

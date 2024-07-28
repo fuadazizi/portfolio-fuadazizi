@@ -1,4 +1,6 @@
-@import "variables";
+@import '../variables';
+
+$cta-distance: 20px;
 
 .work-showcase {
 	.showcase-container {
@@ -8,6 +10,22 @@
 		padding: 84px 32px;
 		z-index: 2;
 		transition: 0.3s ease-out;
+		
+		.showcase-cta {
+			font-size: 24px;
+			border: 3px solid $dark-green;
+			padding: 0px 10px;
+			top: $cta-distance;
+			transition: .3s ease-out;
+
+			&:hover {
+				background-color: $dark-green;
+				cursor: pointer;
+				a {
+					color: white;
+				}
+			}
+		}
 
 		.showcase-title {
 			font-size: 4rem;
@@ -68,6 +86,10 @@
 	.showcase-container {
 		left: 0;
 
+		.showcase-cta {
+			right: $cta-distance;
+		}
+
 		.showcase-title {
 			left: 10px;
 		}
@@ -83,6 +105,10 @@
 	.showcase-container {
 		right: 0;
 		align-content: flex-end;
+
+		.showcase-cta {
+			left: $cta-distance;
+		}
 
 		.showcase-title {
 			right: 10px;

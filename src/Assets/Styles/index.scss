@@ -60,6 +60,30 @@ h3 {
 	padding-block: 70px;
 }
 
+.not-found {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 50px;
+	img {
+		width: 400px;
+		margin-block: 16px;
+	}
+	button {
+		color: $dark-grey;
+		svg {
+			transition: .2s ease-out;
+			position: relative;
+			left: 0;
+		}
+		&:hover {
+			svg {
+				left: -3px;
+			}
+		}
+	}
+}
+
 // RESPONSIVE
 
 @media (max-width: 1024px) {
@@ -74,7 +98,6 @@ h3 {
 		font-size: 30px;
 	}
 	p {
-		font-family: "fs-regular";
 		font-size: 18px;
 	}
 }
@@ -97,12 +120,21 @@ h3 {
 		// font-size: 24px;
 	}
 	p {
-		font-family: "fs-regular";
 		font-size: 12px;
 	}
 
 	.super-container {
 		padding-block: 30px;
+	}
+
+	.not-found {
+		margin-inline: 25px;
+		img {
+			width: 250px;
+		}
+		button {
+			font-size: 12px;
+		}
 	}
 }
 

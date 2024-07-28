@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
-import "../Assets/Styles/navbar.scss";
+import "../Assets/Styles/component/navbar.scss";
 
 import bar from "../Assets/Icons/bar.svg";
 
@@ -22,9 +23,9 @@ export default function Navbar() {
 			<Container className="p-0 w-100 d-flex flex-column">
 				<Row>
 					<Col>
-						<a className="navbar-brand" href="#">
+						<Link className="navbar-brand" to="/">
 							<img src="logo.png" alt="Bootstrap" height="65" />
-						</a>
+						</Link>
 					</Col>
 					<Col
 						className="align-items-center justify-content-end"

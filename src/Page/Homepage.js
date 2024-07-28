@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Ratio } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 // Internal component
 import Footer from "../Components/Footer";
@@ -9,15 +9,12 @@ import Showcase from "../Components/Showcase";
 import SkillCard from "../Components/SkillCard";
 
 // Styles
-import "../Assets/Styles/homepage.scss";
+import "../Assets/Styles/page/homepage.scss";
 
 // JSON
 import experiencesData from "../Assets/Json/experiences.json";
 import showcasesData from "../Assets/Json/showcases.json";
 import skillsData from "../Assets/Json/skills.json";
-
-// Images
-import computer from "../Assets/Icons/computer.svg";
 
 export default function Homepage() {
 	return (
@@ -35,9 +32,6 @@ export default function Homepage() {
 								A passionate programmer and web developer
 							</p>
 						</Col>
-						{/* <Col className="d-flex justify-content-end align-items-end">
-							<img src={computer} alt="computer" width="200px" />
-						</Col> */}
 					</Row>
 				</Container>
 			</div>
@@ -67,10 +61,6 @@ export default function Homepage() {
 							className="d-flex justify-content-center align-items-center flex-wrap"
 						>
 							<div className="rounded-circle w-100 m-0">
-								{/* <img
-									src="assets/images/fuad.png"
-									alt="photo-fuad"
-								/> */}
 							</div>
 						</Col>
 					</Row>

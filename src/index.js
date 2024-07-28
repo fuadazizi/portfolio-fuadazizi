@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import reportWebVitals from './reportWebVitals';
+
+// CSS
 import 'bootstrap/dist/css/bootstrap.css';
 import './Assets/Styles/index.scss';
-import reportWebVitals from './reportWebVitals';
-import Homepage from './Page/Homepage';
+
+// Routes
+import WebRoutes from './Page/WebRoutes';
 
 // Font Awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -20,7 +24,7 @@ library.add(fas, far, fab);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Homepage />
+    <WebRoutes />
   </React.StrictMode>
 );
 

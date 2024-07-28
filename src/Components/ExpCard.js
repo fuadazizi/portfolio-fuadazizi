@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../Assets/Styles/expcard.scss";
+import "../Assets/Styles/component/expcard.scss";
 
 export default function ExpCard({ exp }) {
 	return (
