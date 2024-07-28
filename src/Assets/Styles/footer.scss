@@ -1,40 +1,133 @@
-@import 'variables';
+@import "variables";
 
 #go-top {
-    padding-block: 5px;
-    bottom: -30px;
-    position: relative;
-    transition: 0.1s ease-out;
-    cursor: pointer;
+	padding-block: 5px;
+	transition: 0.1s ease-out;
+	cursor: pointer;
+	font-size: 20px;
 
-    &:hover {
-        bottom: 0px;
-    }
+	span {
+		margin-inline: 16px;
+	}
+
+	svg {
+		position: relative;
+		top: 2px;
+		transition: 0.3s ease-out;
+	}
+
+	&:hover {
+		svg {
+			top: -1px;
+		}
+	}
 }
 
 #footer {
-    position: relative;
-    z-index: 2;
-    background-color: $black-green;
-    padding-top: 50px;
-    padding-bottom: 20px;
+	// padding-top: 50px;
+	// padding-bottom: 20px;
 
-    .container {
-        .topper {
-            #hooker-text {
-                font-size: 32px;
+	.container {
+		padding-block: 60px;
+		.topper {
+			p {
+				font-size: 32px;
+			}
+		}
+		.downer {
+			margin-top: 35px;
+            
+            p {
+                font-size: 16px;
             }
-        }
-        .downer {
-            margin-top: 35px;
 
-            #socmed {
-                color: white;
-                column-gap: 20px;
-            }
-            a {
-                color: white;
-            }
-        }
-    }
+			#socmed {
+                justify-content: flex-end;
+				column-gap: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	// small desktop
+}
+
+@media (max-width: 768px) {
+	#go-top {
+		font-size: 16px;
+	}
+
+	#footer {
+		.container {
+			.topper {
+				p {
+					font-size: 24px;
+				}
+			}
+			.downer {
+				p,a {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	#go-top {
+		font-size: 12px;
+
+		span {
+			margin-inline: 8px;
+		}
+
+		svg {
+			top: 2px;
+		}
+
+		&:hover {
+			svg {
+				top: -1px;
+			}
+		}
+	}
+
+    #footer {
+        .container {
+            padding-block: 30px;
+			.topper {
+				p {
+					font-size: 20px;
+				}
+			}
+			.downer {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+                align-content: center;
+                margin-inline: auto;
+                width: auto;
+                
+                #copyright {
+                    justify-content: center;
+                    margin-top: 12px;
+                    p {
+                        font-size: 12px;
+                    }
+                }
+                #socmed {
+                    justify-content: center;
+                    column-gap: 12px;
+                    a {
+                        font-size: 14px;
+                    }
+                }
+			}
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	// very small phone
 }

@@ -1,34 +1,162 @@
 #navbar {
-    z-index: 9999;
-    .container {
-        height: 70px;
+	z-index: 9999;
+	.container {
+		height: 70px;
+		transition: 0.3s ease-out;
 
-        #menu {
-            gap: 30px;
-            span {
-                float: right;
-                font-family: "fs-medium";
-                font-size: 20px;
-                color: white;
-            }
-        }
-    }
+		span {
+			float: right;
+			font-family: "fs-medium";
+			font-size: 20px;
+			color: white;
+		}
+
+		#menu-desktop {
+			display: flex;
+			gap: 30px;
+		}
+
+		#menu-expand {
+			display: none;
+		}
+
+		#menu-mobile {
+			display: none;
+		}
+	}
 }
-@media (max-width: 320px) {
-    
+
+@media (max-width: 768px) {
+	#navbar {
+		.container {
+			height: 50px;
+			gap: 20px;
+			.row {
+				margin-top: 5px;
+				.navbar-brand img {
+					width: 40px;
+					height: 40px;
+				}
+				#menu-desktop {
+					display: none;
+				}
+				#menu-expand {
+					display: flex;
+
+					button {
+						row-gap: 4px;
+						display: flex;
+
+						.group-bar {
+							height: 3px;
+							width: 25px;
+							position: relative;
+							display: flex;
+							flex-wrap: wrap;
+							img {
+								position: absolute;
+							}
+						}
+
+						img {
+							position: relative;
+							rotate: 0deg;
+							transform-origin: 50% 50%;
+							top: 0;
+							opacity: 1;
+							width: 25px;
+							height: 4px;
+							transition: 0.3s ease-in-out;
+						}
+
+						.bar-1 {
+							animation: showDown .1s ease-out;
+						}
+
+						.bar-3 {
+							animation: showUp .1s ease-out;
+						}
+					}
+				}
+				#menu-mobile {
+					display: flex;
+					gap: 20px;
+					
+					span {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		&.cross {
+			// FOR MOBILE
+			.container {
+				height: 250px;
+				#menu-expand {
+					button {
+						.bar-1 {
+							animation: fadeUp .1s ease-out;
+							opacity: 0;
+						}
+						.bar-21 {
+							rotate: -45deg;
+						}
+						.bar-22 {
+							rotate: 45deg;
+						}
+						.bar-3 {
+							animation: fadeDown .1s ease-out;
+							opacity: 0;
+						}
+					}
+				}
+			}
+		}
+	}
 }
-@media (min-width: 321px) and (max-width: 480px) {
-    
+
+
+@keyframes fadeUp {
+	0% {
+		opacity: 1;
+		top: 0px;
+	}
+	100% {
+		opacity: 0;
+		top: 5px;
+	}
 }
-@media (min-width: 576px) and (max-width: 768px) {
-     #navbar {
-        .container {
-            #menu {
-                gap: 10px;
-                span {
-                    font-size: 16px;
-                }
-            }
-        }
-    }
+
+@keyframes showDown {
+	0% {
+		opacity: 0;
+		top: 5px;
+	}
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+}
+
+@keyframes fadeDown {
+	0% {
+		opacity: 1;
+		top: 0;
+	}
+	100% {
+		opacity: 0;
+		top: -5px;
+	}
+}
+
+@keyframes showUp {
+	0% {
+		opacity: 0;
+		top: -5px;
+	}
+	100% {
+		opacity: 1;
+		top: 0px;
+	}
 }

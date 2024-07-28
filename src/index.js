@@ -5,6 +5,18 @@ import './Assets/Styles/index.scss';
 import reportWebVitals from './reportWebVitals';
 import Homepage from './Page/Homepage';
 
+// Font Awesome
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+// import { fass } from "@fortawesome/sharp-solid-svg-icons";
+// import { fasds } from "@fortawesome/sharp-duotone-solid-svg-icons";
+// import { faHatCowboy } from "@fortawesome/pro-thin-svg-icons";
+// import { faHatChef } from "@fortawesome/sharp-solid-svg-icons";
+// import { faPlateUtensils } from "@fortawesome/sharp-regular-svg-icons";
+library.add(fas, far, fab);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

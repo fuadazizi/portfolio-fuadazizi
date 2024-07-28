@@ -3,6 +3,7 @@
 
 #hero {
 	height: 500px;
+	margin-top: 70px;
 	.container {
 		h1 {
 			font-size: 64px;
@@ -43,14 +44,12 @@
 }
 
 #experiences {
-	.container-fluid {
-		.card-container {
-			gap: 50px;
-			margin-top: 60px;
+	.card-container {
+		// gap: 50px;
+		// margin-top: 60px;
 
-			.row {
-				row-gap: 24px;
-			}
+		.row {
+			// row-gap: 24px;
 		}
 	}
 }

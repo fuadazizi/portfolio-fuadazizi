@@ -66,10 +66,6 @@ export default function Showcase({ show, type }) {
 					</div>
 				</div>
 				<div className="back-shadow position-absolute h-100 w-100 start-0 top-0 bg-dark-green">
-					{/* <div className="side-button bn-regular bg-dark-green position-absolute d-flex flex-column justify-content-center text-white h-100 text-center">
-						<a> VIEW GALLERY </a>
-						<img src={dots} alt="dots" width="15px" />
-					</div> */}
 				</div>
 			</div>
 		</Row>

@@ -77,26 +77,19 @@ export default function Homepage() {
 				</Container>
 			</div>
 
-			<div className="super-container" id="experiences">
-				<Container fluid>
-					<div className="text-center">
+			<div
+				className="super-container d-flex flex-column align-items-center p-0"
+				id="experiences"
+			>
+				<Container className="card-container d-flex flex-column">
+					<div className="text-center mb-4">
 						<h2>My Experience</h2>
 					</div>
-					<Container className="card-container d-flex flex-row justify-content-center p-0 mx-auto">
-						<Row>
-							{experiencesData.map((exp, index) => (
-								<Col
-									xs={12}
-									md={6}
-									xxl={3}
-									className="d-flex justify-content-center"
-									key={index}
-								>
-									<ExpCard key={index} exp={exp} />
-								</Col>
-							))}
+					{experiencesData.map((exp, index) => (
+						<Row key={index}>
+							<ExpCard exp={exp} />
 						</Row>
-					</Container>
+					))}
 				</Container>
 			</div>
 
@@ -133,18 +126,10 @@ export default function Homepage() {
 							AI is a very genius. I hope I can involve in that too.
 						</p>
 					</Row>
-					{/* <Row className="mt-4">
-						<Col>
-							<img src="assets/images/tenet.jpg" alt="tenet" />
-						</Col>
-						<Col className="align-content-end text-end">
-							<img src="assets/images/dota.jpg" alt="dota" />
-						</Col>
-					</Row> */}
 				</Container>
 			</div>
 
-			<div id="skills">
+			<div className="d-flex justify-content-center" id="skills">
 				<Container className="text-center">
 					<Row>
 						<h2>Things I'm Good at</h2>

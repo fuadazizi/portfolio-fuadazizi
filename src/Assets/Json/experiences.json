@@ -4,31 +4,35 @@
 		"type": "education",
 		"logo": "assets/images/logos/telkom.png",
 		"title": "Telkom University",
-		"info": "Bachelor Degree (2018 - 2022)",
-		"desc": "I graduated with a Bachelor's degree in Informatics from Telkom University. During my studies, I actively participated in various organizations and roles, such as serving as an Event Organizer for Nihon no Matsuri 12, a member of the Al-Fath student club, and a Practicum Assistant in the Informatics Lab."
+		"role": "Bachelor Degree (2018 - 2022)",
+		"desc": "I graduated with a Bachelor's degree in Informatics from Telkom University. During my studies, I actively participated in various organizations and roles, such as serving as an Event Organizer for Nihon no Matsuri 12, a member of the Al-Fath student club, and a Practicum Assistant in the Informatics Lab.",
+		"tags": ["Informatics"]
 	},
 	{
 		"id": 2,
 		"type": "work",
 		"logo": "assets/images/logos/leholeh.png",
 		"title": "Leholeh Indonesia",
-		"info": "UI Designer (2021 [3 months])",
-		"desc": "I work as a freelancer which help frontend developer to develop UI on desktop web app Leholeh. I have created several part of web including payment, cart, admin feature, and catalogue."
+		"role": "UI Designer (2021 [3 months])",
+		"desc": "I work as a freelancer which help frontend developer to develop UI on desktop web app Leholeh. I have created several part of web including payment, cart, admin feature, and catalogue.",
+		"tags": ["Figma", "Photoshop"]
 	},
 	{
 		"id": 3,
 		"type": "work",
 		"logo": "assets/images/logos/Houset.png",
 		"title": "Houset",
-		"info": "Frontend Developer (2021-2022)",
-		"desc": "Being part-timer in a startup Houset as a Frontend Web Developer. In this project I use HTML, CSS, Javasript, ReactJS, and Bootstrap."
+		"role": "Frontend Developer (2021-2022)",
+		"desc": "Being part-timer in a startup Houset as a Frontend Web Developer. In this project I use HTML, CSS, Javasript, ReactJS, and Bootstrap.",
+		"tags": ["Web Development", "ReactJS", "Scrum"]
 	},
 	{
 		"id": 4,
 		"type": "work",
 		"logo": "assets/images/logos/detik.png",
 		"title": "Detikcom",
-		"info": "Ads Developer (2022 - Present)",
-		"desc": "Develop and maintain website ads detik.com. Ads developed: Medium rectangle, Sticky static banner, billboard banner, parallax, skinner, channelbox, vertical billboard, vertical billboard, etc. Develop and maintain website Salesproduct to provide data for supporting sales and marketing team."
+		"role": "Ads Developer (2022 - Present)",
+		"desc": "Develop and maintain website ads detik.com. Ads developed: Medium rectangle, Sticky static banner, billboard banner, parallax, skinner, channelbox, vertical billboard, vertical billboard, etc. Develop and maintain website Salesproduct to provide data for supporting sales and marketing team.",
+		"tags": ["Web Development","Javascript", "Php", "Laravel"]
 	}
 ]
