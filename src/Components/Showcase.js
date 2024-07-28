@@ -42,12 +42,6 @@ export default function Showcase({ show, type }) {
 						bottom: hasBeenInView ? "10px" : "",
 					}}
 				>
-					<div className="showcase-cta position-absolute">
-						<Link className="bn-regular color-dark-green" to="/gallery">
-							<span className=""> VIEW GALLERY </span>
-							{/* <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" /> */}
-						</Link>
-					</div>
 					<p className="showcase-title bn-regular color-indigo bg-white position-absolute">
 						{show["title"]}
 					</p>
