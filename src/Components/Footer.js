@@ -37,13 +37,13 @@ export default function Footer() {
 								<a className="text-white" href="https://id.linkedin.com/in/fuad-azizi">LinkedIn</a>
 							</span>
 							<span>
-								<a className="text-white" href="https://github.com/fuadazizi">Github</a>
-							</span>
-							<span>
-								<a className="text-white" href="https://instagram.com/fuadazizi_">Instagram</a>
+								<a className="text-white" href="https://instagram.com/fuadazizi.n">Instagram</a>
 							</span>
 							<span>
 								<a className="text-white" href="mailto:nfuadazizi@gmail.com">Email</a>
+							</span>
+							<span>
+								<a className="text-white" href="https://wa.me/+6282117650821">WhatsApp</a>
 							</span>
 						</Col>
 					</Row>
