@@ -1,0 +1,21 @@
+@import "../variables";
+
+#sp-gallery {
+	.ideas {
+		p {
+			margin-bottom: 44px;
+		}
+	}
+	.tone {
+		.pick-color {
+			margin-block: 44px;
+		}
+
+		#spbar1 {
+			z-index: 99;
+			position: absolute;
+			left: 49%;
+			top: 10%;
+		}
+	}
+}

@@ -1,0 +1,81 @@
+@import "../variables";
+@import "../fonts";
+
+#gallery-frame {
+	#navbar {
+		// animation: slideNavbarDown 1s ease-out forwards;
+	}
+
+	.gallery-header {
+		animation: fadeIn 0.5s ease-in forwards;
+		.container {
+			height: 250px;
+			hr {
+				margin-top: 12px;
+				margin-bottom: 8px;
+			}
+			h1 {
+				font-size: 48px;
+			}
+		}
+	}
+
+	.gallery-body {
+		hr {
+			border: 1px solid $dark-green;
+			width: 70%;
+			margin: 60px auto;
+		}
+
+		.technologies {
+			.tech-body {
+				margin-inline: 60px;
+				display: flex;
+				flex-direction: column;
+				gap: 60px;
+			}
+		}
+	}
+}
+
+.gallery-section-title {
+	width: fit-content;
+	border-radius: 5px;
+	font-family: "bn-regular";
+	color: $light-blue;
+	background: $black-green;
+	padding: 10px 15px 5px;
+	line-height: 40px;
+	margin-bottom: 44px;
+}
+
+// RESPONSIVE
+
+@media (max-width: 1024px) {
+	.gallery-header {
+		h1 {
+			font-size: 40px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.gallery-header {
+		padding-top: 50px;
+		h1 {
+			font-size: 28px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.gallery-header {
+		h1 {
+			font-size: 24px;
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	// very small phone
+}

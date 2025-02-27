@@ -5,7 +5,8 @@
 		"desc": "Design of Leholeh need more improvement, so I helped frontend team to make an improvement of it. I was requested to make a wireframe of how the flow of complain feature will be executed. I used draw.io tools to make this.<br><br> I also helped with creating some art design like profile logo for default, shop picture for default, error page, and testing by using the web and app.<br><br> The tone color I choose in this design is red. It is the basic color of Leholeh company.",
 		"logo": "assets/images/logos/leholeh.png",
 		"tone": ["#96121C", "#C91922", "#EFE32E"],
-		"cover": "assets/images/showcases/leholeh-cover.jpg"
+		"cover": "assets/images/showcases/leholeh-cover.jpg",
+		"link": "leholeh"
 	},
 	{
 		"id": 2,
@@ -13,7 +14,8 @@
 		"desc": "This website designed using Framework ReactJS and Bootstrap. The frontend design adapted from UI designer team. While designing this web, my team adapted Agile framework method to develop this website.<br><br> Several features added to this website include login & register, see catalogue, cart system, payment gateway, and design with 3d canvas.<br><br> The tone color I used in this website is mostly green and white.",
 		"logo": "assets/images/logos/houset.png",
 		"tone": ["#055053", "#F1FFFB", "#E5FACF"],
-		"cover": "assets/images/showcases/houset-cover.jpg"
+		"cover": "assets/images/showcases/houset-cover.jpg",
+		"link": "houset"
 	},
 	{
 		"id": 3,
@@ -21,7 +23,8 @@
 		"desc": "Website created by Ads Designer Team to help other team by providing them with data and information for developing and advertising ads detikcom.<br><br> Data provided include Rate Card, Mediakits, Visual Story, Insights, Banners and Preview Links, Channel Profile, Daily Impression, etc.<br><br> Tone used in this website is colorful with dominated by purple.",
 		"logo": "assets/images/logos/salesproduct.png",
 		"tone": ["#9442fe", "darkslateblue", "#1266f1"],
-		"cover": "assets/images/showcases/salesproduct-cover.jpg"
+		"cover": "assets/images/showcases/salesproduct-cover.jpg",
+		"link": "salesproduct"
 	},
 	{
 		"id": 4,
@@ -29,6 +32,7 @@
 		"desc": "This is some of my ads project while I work in Detikcom. Ads design/banner are created as an ads slot so it can be used by anyone who wants to place advertisement on detikcom website. Ads design are required strong javascript skills, intermediate html, and also css.<br><br> The design I developed for examples are medium rectangle, parallax, static detail, immersive skin, billboard, and many more. Ads designer team need to keep up to date to any ads banner development that are currently on trending.",
 		"logo": "assets/images/logos/detik.png",
 		"tone": [],
-		"cover": "assets/images/showcases/detik-cover.jpg"
+		"cover": "assets/images/showcases/detik-cover.jpg",
+		"link": "detikads"
 	}
 ]

@@ -1,31 +1,31 @@
-$light-grey: #f5f5f5;
-$light-blue: #eef7ff;
+// GREEN
+$thin-green: #f2fffe;
 $light-green: #cde8e5;
-$dark-grey: #657580;
 $bold-green: #7ab2b2;
 $bolder-green: #4d869c;
 $soft-dark-green: #087382;
 $dark-green: #285f75;
-$blue: #123a88;
 $black-green: #013D55;
+
+// BLUE
+$light-blue: #eef7ff;
+$blue: #123a88;
 $indigo: #0b1a4f;
+
+//GRAYSCALE
+$light-grey: #f5f5f5;
+$medium-grey: #E0E0E0;
+$grey: #ADB2B4;
+$dark-grey: #657580;
 $black: #0c222a;
 
-// Background color classes
-.bg-light-grey {
-    background-color: $light-grey;
-}
-
-.bg-light-blue {
-    background-color: $light-blue;
+// GREEN Background color classes
+.bg-thin-green {
+    background-color: $thin-green;
 }
 
 .bg-light-green {
     background-color: $light-green;
-}
-
-.bg-dark-grey {
-    background-color: $dark-grey;
 }
 
 .bg-bold-green {
@@ -44,37 +44,51 @@ $black: #0c222a;
     background-color: $dark-green;
 }
 
-.bg-blue {
-    background-color: $blue;
-}
-
 .bg-black-green {
     background-color: $black-green;
+}
+
+// BLUE Background color classes
+.bg-light-blue {
+    background-color: $light-blue;
+}
+
+.bg-blue {
+    background-color: $blue;
 }
 
 .bg-indigo {
     background-color: $indigo;
 }
 
+// GRAYSCALE Background color classes
+.bg-light-grey {
+    background-color: $light-grey;
+}
+
+.bg-medium-grey {
+    background-color: $medium-grey;
+}
+
+.bg-grey {
+    background-color: $grey;
+}
+
+.bg-dark-grey {
+    background-color: $dark-grey;
+}
+
 .bg-black {
     background-color: $black;
 }
 
-// Font color classes
-.color-light-grey {
-    color: $light-grey;
-}
-
-.color-light-blue {
-    color: $light-blue;
+// GREEN Font color classes
+.color-thin-green {
+    color: $thin-green;
 }
 
 .color-light-green {
     color: $light-green;
-}
-
-.color-dark-grey {
-    color: $dark-grey;
 }
 
 .color-bold-green {
@@ -93,18 +107,58 @@ $black: #0c222a;
     color: $dark-green;
 }
 
-.color-blue {
-    color: $blue;
-}
-
 .color-black-green {
     color: $black-green;
+}
+
+// BLUE Font color classes
+.color-light-blue {
+    color: $light-blue;
+}
+
+.color-blue {
+    color: $blue;
 }
 
 .color-indigo {
     color: $indigo;
 }
 
+// GRAYSCALE Font color classes
+.color-light-grey {
+    color: $light-grey;
+}
+
+.color-medium-grey {
+    color: $medium-grey;
+}
+
+.color-grey {
+    color: $grey;
+}
+
+.color-dark-grey {
+    color: $dark-grey;
+}
+
 .color-black {
     color: $black;
+}
+
+// TRANSITION
+
+.transition-03 {
+    transition: .3s ease-out;
+}
+
+.transition-05 {
+    transition: .5s ease-out;
+}
+
+.transition-10 {
+    transition: 1s ease-out;
+}
+
+.transition-20 {
+    transition: 2s ease-out;
 }

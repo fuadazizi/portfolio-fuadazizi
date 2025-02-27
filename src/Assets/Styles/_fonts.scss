@@ -45,6 +45,34 @@
   font-family: "o-bold";
   src: url(../Font/Outfit/static/Outfit-Bold.ttf);
 }
+@font-face {
+  font-family: "m-light";
+  src: url(../Font/Montserrat/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: "m-regular";
+  src: url(../Font/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "m-medium";
+  src: url(../Font/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: "i-light";
+  src: url(../Font/Inter/Inter-Light.ttf);
+}
+@font-face {
+  font-family: "i-regular";
+  src: url(../Font/Inter/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "i-medium";
+  src: url(../Font/Inter/Inter-Medium.ttf);
+}
+@font-face {
+  font-family: "i-bold";
+  src: url(../Font/Inter/Inter-Bold.ttf);
+}
 
 .fs-thin {
   font-family: "fs-thin";
@@ -101,3 +129,37 @@
   font-style: normal;
 }
 
+.m-light {
+  font-family: "m-light";
+  font-style: normal;
+}
+
+.m-regular {
+  font-family: "m-regular";
+  font-style: normal;
+}
+
+.m-medium {
+  font-family: "m-medium";
+  font-style: normal;
+}
+
+.i-light {
+  font-family: "i-light";
+  font-style: normal;
+}
+
+.i-regular {
+  font-family: "i-regular";
+  font-style: normal;
+}
+
+.i-medium {
+  font-family: "i-medium";
+  font-style: normal;
+}
+
+.i-bold {
+  font-family: "i-bold";
+  font-style: normal;
+}

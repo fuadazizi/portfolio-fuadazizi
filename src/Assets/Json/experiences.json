@@ -31,8 +31,17 @@
 		"type": "work",
 		"logo": "assets/images/logos/detik.png",
 		"title": "Detikcom",
-		"role": "Ads Developer (2022 - Present)",
+		"role": "Ads Developer (2022 - 2024)",
 		"desc": "Develop and maintain website ads detik.com. Ads developed: Medium rectangle, Sticky static banner, billboard banner, parallax, skinner, channelbox, vertical billboard, vertical billboard, etc. Develop and maintain website Salesproduct to provide data for supporting sales and marketing team.",
 		"tags": ["Web Development","Javascript", "Php", "Laravel"]
+	},
+	{
+		"id": 5,
+		"type": "work",
+		"logo": "assets/images/logos/puti.png",
+		"title": "PuTI Telkom University",
+		"role": "Backend Developer (2025 - Present)",
+		"desc": "Responsible for translating business processes to be developed into \"Satu Data\" applications. Create business processes on the backend side to generate the required APIs.",
+		"tags": ["Web Development","Backend Developer", "PHP", "Laravel", "PostgreSQL", "Postman"]
 	}
 ]

@@ -1,8 +1,11 @@
 #navbar {
 	z-index: 9999;
+	top: 0;
+	animation: fadeIn 1s ease-out forwards;
 	.container {
 		height: 70px;
 		transition: 0.3s ease-out;
+		justify-content: center;
 
 		span {
 			float: right;
@@ -31,6 +34,7 @@
 		.container {
 			height: 50px;
 			gap: 20px;
+			justify-content: normal;
 			.row {
 				margin-top: 5px;
 				.navbar-brand img {
@@ -70,11 +74,11 @@
 						}
 
 						.bar-1 {
-							animation: showDown .1s ease-out;
+							animation: showBarDown .1s ease-out;
 						}
 
 						.bar-3 {
-							animation: showUp .1s ease-out;
+							animation: showBarUp .1s ease-out;
 						}
 					}
 				}
@@ -96,7 +100,7 @@
 				#menu-expand {
 					button {
 						.bar-1 {
-							animation: fadeUp .1s ease-out;
+							animation: showBarUp .1s ease-out;
 							opacity: 0;
 						}
 						.bar-21 {
@@ -106,57 +110,12 @@
 							rotate: 45deg;
 						}
 						.bar-3 {
-							animation: fadeDown .1s ease-out;
+							animation: showBarDown .1s ease-out;
 							opacity: 0;
 						}
 					}
 				}
 			}
 		}
-	}
-}
-
-
-@keyframes fadeUp {
-	0% {
-		opacity: 1;
-		top: 0px;
-	}
-	100% {
-		opacity: 0;
-		top: 5px;
-	}
-}
-
-@keyframes showDown {
-	0% {
-		opacity: 0;
-		top: 5px;
-	}
-	100% {
-		opacity: 1;
-		top: 0;
-	}
-}
-
-@keyframes fadeDown {
-	0% {
-		opacity: 1;
-		top: 0;
-	}
-	100% {
-		opacity: 0;
-		top: -5px;
-	}
-}
-
-@keyframes showUp {
-	0% {
-		opacity: 0;
-		top: -5px;
-	}
-	100% {
-		opacity: 1;
-		top: 0px;
 	}
 }

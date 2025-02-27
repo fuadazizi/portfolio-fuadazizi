@@ -1,4 +1,3 @@
-@import "../fonts";
 @import '../variables';
 
 #hero {
@@ -55,6 +54,7 @@
 }
 
 #works {
+	overflow-x:hidden;
 	.container {
 		row-gap: 80px;
 	}
@@ -68,6 +68,41 @@
 	.card-container {
 		margin-top: 32px;
 	}
+}
+
+// LOADING STATE
+
+.loading {
+	// navbar
+	// #navbar {
+	// 	animation: slideNavbarUp .3s ease-in forwards;
+	// }
+
+	// hero
+	#navbar, #hero, #profile, #experiences, #hobbies, #works, #skills {
+		animation: fadeOut .3s ease-in forwards;
+	}
+
+	// showcase
+	// .work-showcase.img-right {
+	// 	.content-body {
+	// 		animation: slideShowcaseRight .3s ease-in forwards;
+
+	// 		&::before {
+	// 			animation: slideShadowLeft .3s ease-in forwards;
+	// 		}
+	// 	}
+	// }
+
+	// .work-showcase.img-left {
+	// 	.content-body {
+	// 		animation: slideShowcaseLeft .3s ease-in forwards;
+			
+	// 		&::before {
+	// 			animation: slideShadowRight .3s ease-in forwards;
+	// 		}
+	// 	}
+	// }
 }
 
 // RESPONSIVE

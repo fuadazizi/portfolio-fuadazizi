@@ -1,0 +1,153 @@
+// ============================= NAVBAR =============================
+
+@keyframes slideNavbarUp {
+	0% {
+		top: 0;
+	}
+
+	100% {
+		top: -70px;
+	}
+}
+
+@keyframes slideNavbarDown {
+	0% {
+		top: -70px;
+		opacity: 0;
+	}
+
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes slideNavbarShow {
+	0% {
+		top: 0;
+		opacity: 1;
+	}
+
+	50% {
+		top: -70px;
+		opacity: 0;
+	}
+
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+// ============================= BAR MOBILE =============================
+
+@keyframes hideBarUp {
+	0% {
+		opacity: 1;
+		top: 0px;
+	}
+	100% {
+		opacity: 0;
+		top: 5px;
+	}
+}
+
+@keyframes showBarDown {
+	0% {
+		opacity: 0;
+		top: 5px;
+	}
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+}
+
+@keyframes hideBarDown {
+	0% {
+		opacity: 1;
+		top: 0;
+	}
+	100% {
+		opacity: 0;
+		top: -5px;
+	}
+}
+
+@keyframes showBarUp {
+	0% {
+		opacity: 0;
+		top: -5px;
+	}
+	100% {
+		opacity: 1;
+		top: 0px;
+	}
+}
+
+// ============================= SHOWCASE =============================
+
+@keyframes slideShowcaseRight {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 150%;
+	}
+}
+
+@keyframes slideShowcaseLeft {
+	0% {
+		right: 0;
+	}
+	100% {
+		right: 150%;
+	}
+}
+
+@keyframes slideShadowRight {
+	0% {
+		right: -10px;
+	}
+	100% {
+		right: -300%;
+	}
+}
+
+@keyframes slideShadowLeft {
+	0% {
+		left: -10px;
+	}
+	100% {
+		left: -300%;
+	}
+}
+
+// ============================= GLOBAL =============================
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes leftToRight {
+	0% {
+		left: -100%;
+	}
+	100% {
+		left: 100%;
+	}
+}

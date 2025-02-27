@@ -7,7 +7,7 @@
     },
     {
         "id": 2,
-        "skill": "php",
+        "skill": "PHP",
         "image": "assets/images/skills/php.png",
         "meter": "78"
     },
@@ -61,7 +61,7 @@
     },
     {
         "id": 11,
-        "skill": "Premiere pro",
+        "skill": "Premiere Pro",
         "image": "assets/images/skills/premierepro.png",
         "meter": "25"
     }

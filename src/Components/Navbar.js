@@ -15,7 +15,7 @@ export default function Navbar() {
 
 	return (
 		<div
-			className={`bg-dark-green text-white position-fixed top-0 d-flex justify-content-center w-100 overflow-hidden ${
+			className={`bg-dark-green text-white position-fixed d-flex justify-content-center w-100 overflow-hidden ${
 				expand ? "cross" : ""
 			}`}
 			id="navbar"
@@ -31,18 +31,29 @@ export default function Navbar() {
 						className="align-items-center justify-content-end"
 						id="menu-desktop"
 					>
-						<a href="#profile">
+						<a href="/#profile">
 							<span> Profile </span>
 						</a>
-						<a href="#experiences">
+						<a href="/#experiences">
 							<span> Experiences </span>
 						</a>
-						<a href="#works">
+						<a href="/#works">
 							<span> Works </span>
 						</a>
-						<a href="#hobbies">
+						<a href="/#hobbies">
 							<span> Things </span>
 						</a>
+						<Link to="/contact">
+							<span>Contact</span>
+						</Link>
+						{/* 
+						<Link to="/gallery">
+							<span>Gallery</span>
+						</Link>
+						<Link to="/blog">
+							<span>Blog</span>
+						</Link> 
+						*/}
 					</Col>
 					<Col className="flex-column justify-content-center" id="menu-expand">
 						<button className="flex-column align-items-end" onClick={toggleNav}>
@@ -66,7 +77,7 @@ export default function Navbar() {
 						className="flex-column align-items-center justify-content-center"
 						id="menu-mobile"
 					>
-						<a href="#profile">
+						{/* <a href="#profile">
 							<span> Profile </span>
 						</a>
 						<a href="#experiences">
@@ -77,7 +88,16 @@ export default function Navbar() {
 						</a>
 						<a href="#hobbies">
 							<span> Things </span>
-						</a>
+						</a> */}
+						<Link to="/gallery">
+							<span>Gallery</span>
+						</Link>
+						<Link to="/contact">
+							<span>Contact</span>
+						</Link>
+						<Link to="/blog">
+							<span>Blog</span>
+						</Link>
 					</Col>
 				</Row>
 			</Container>

@@ -1,0 +1,12 @@
+<svg width="307" height="84" viewBox="0 0 307 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_2522_441" fill="white">
+<path d="M302 81H181C164.431 81 151 67.5685 151 51V32H302V81Z"/>
+</mask>
+<path d="M302 85H181C162.222 85 147 69.7777 147 51H155C155 65.3594 166.641 77 181 77H302V85ZM151 32H302H151ZM302 32V81V32ZM181 85C162.222 85 147 69.7777 147 51V32H155V51C155 65.3594 166.641 77 181 77V85Z" fill="#013D55" mask="url(#path-1-inside-1_2522_441)"/>
+<mask id="path-3-inside-2_2522_441" fill="white">
+<path d="M4 3L125 3C141.569 3 155 16.4315 155 33V51L4 51L4 3Z"/>
+</mask>
+<path d="M4 -1L125 -1C143.778 -1 159 14.2223 159 33H151C151 18.6406 139.359 7 125 7L4 7V-1ZM155 51L4 51L155 51ZM4 51L4 3L4 51ZM125 -1C143.778 -1 159 14.2223 159 33V51H151V33C151 18.6406 139.359 7 125 7V-1Z" fill="#013D55" mask="url(#path-3-inside-2_2522_441)"/>
+<circle cx="302" cy="79" r="5" fill="#013D55"/>
+<circle cx="5" cy="5" r="5" fill="#013D55"/>
+</svg>

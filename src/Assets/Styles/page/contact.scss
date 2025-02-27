@@ -1,0 +1,93 @@
+@import "../variables";
+
+#contact {
+	.header-block {
+		.container {
+			width: 40vw;
+		}
+
+		h1 {
+			font-size: 48px;
+		}
+
+		hr {
+			height: 6px;
+			background-color: $dark-green;
+			opacity: 1;
+			margin: 16px 0 12px 0;
+			border-radius: 3px;
+		}
+
+		p {
+			margin-right: 48px;
+			font-size: 20px;
+		}
+	}
+
+	.body-block {
+		.row {
+			row-gap: 44px;
+			margin-bottom: 44px;
+			justify-content: center;
+		}
+	}
+}
+
+.socmedCard {
+	background-color: #f2fffe;
+	width: fit-content;
+	padding-block: 12px;
+	border-radius: 5px;
+
+	img {
+		margin-right: 24px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	&:hover {
+		box-shadow: 0px 0px 7px 0px $dark-grey;
+		-webkit-box-shadow: 0px 0px 7px 0px $dark-grey;
+		-moz-box-shadow: 0px 0px 7px 0px $dark-grey;
+	}
+}
+
+// RESPONSIVE
+@media (max-width: 1400px) {
+	.socmedCard {
+		img {
+			margin-right: 14px;
+		}
+
+		p {
+			font-size: 12px;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+	// tablet
+	.socmedCard {
+		img {
+			margin-right: 18px;
+		}
+
+		p {
+			font-size: 14px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	// regular phone
+}
+
+@media (max-width: 320px) {
+	// very small phone
+}
