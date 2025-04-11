@@ -41,7 +41,7 @@ export default function Contact() {
 						</p>
 					</div>
 				</div>
-				<div className="body-block container m-auto">
+				<div className="body-block container m-auto px-4">
 					<Row>
 						<Col xs={12}>
 							<h2 className="fs-medium color-dark-green">Social Media</h2>

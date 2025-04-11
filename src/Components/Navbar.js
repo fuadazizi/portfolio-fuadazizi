@@ -77,19 +77,22 @@ export default function Navbar() {
 						className="flex-column align-items-center justify-content-center"
 						id="menu-mobile"
 					>
-						{/* <a href="#profile">
+						<a href="/#profile">
 							<span> Profile </span>
 						</a>
-						<a href="#experiences">
+						<a href="/#experiences">
 							<span> Experiences </span>
 						</a>
-						<a href="#works">
+						<a href="/#works">
 							<span> Works </span>
 						</a>
-						<a href="#hobbies">
+						<a href="/#hobbies">
 							<span> Things </span>
-						</a> */}
-						<Link to="/gallery">
+						</a>
+						<Link to="/contact">
+							<span>Contact</span>
+						</Link>
+						{/* <Link to="/gallery">
 							<span>Gallery</span>
 						</Link>
 						<Link to="/contact">
@@ -97,7 +100,7 @@ export default function Navbar() {
 						</Link>
 						<Link to="/blog">
 							<span>Blog</span>
-						</Link>
+						</Link> */}
 					</Col>
 				</Row>
 			</Container>

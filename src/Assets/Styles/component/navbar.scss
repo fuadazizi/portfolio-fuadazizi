@@ -33,7 +33,6 @@
 	#navbar {
 		.container {
 			height: 50px;
-			gap: 20px;
 			justify-content: normal;
 			.row {
 				margin-top: 5px;
@@ -96,7 +95,8 @@
 		&.cross {
 			// FOR MOBILE
 			.container {
-				height: 250px;
+				height: auto;
+				margin-bottom: 20px;
 				#menu-expand {
 					button {
 						.bar-1 {
