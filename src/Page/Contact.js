@@ -49,7 +49,7 @@ export default function Contact() {
 						<SocmedCard
 							icon={LinkedIn}
 							text="linkedin.com/in/fuad-azizi"
-							link="https://linkedin.com/in/fuad-azizi"
+							link="https://linkedin.com/in/fuadazizi-n"
 						/>
 						<SocmedCard
 							icon={Instagram}
@@ -61,17 +61,12 @@ export default function Contact() {
 							text="github.com/fuadazizi"
 							link="https://github.com/fuadazizi"
 						/>
-						<SocmedCard
-							icon={Facebook}
-							text="facebook.com/fuadazizi.n"
-							link="https://facebook.com/fuadazizi.n"
-						/>
 					</Row>
 					<Row>
 						<h2 className="fs-medium color-dark-green">Personal Contacts</h2>
 						<SocmedCard
 							icon={Gmail}
-							text="nfuadazizi@gmail.com"
+							text="nurfuadazizi@gmail.com"
 							link="mailto:nfuadazizi@gmail.com?subject=Let's Build Something Great Together!"
 						/>
 						<SocmedCard
