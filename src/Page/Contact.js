@@ -49,7 +49,7 @@ export default function Contact() {
 						</Col>
 						<SocmedCard
 							icon={LinkedIn}
-							text="linkedin.com/in/fuad-azizi"
+							text="linkedin.com/in/fuadazizi-n"
 							link="https://linkedin.com/in/fuadazizi-n"
 						/>
 						<SocmedCard
