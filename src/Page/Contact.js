@@ -12,6 +12,7 @@ import Github from "../Assets/Icons/github-color.png";
 import Facebook from "../Assets/Icons/facebook-color.png";
 import Gmail from "../Assets/Icons/gmail-color.png";
 import WhatsApp from "../Assets/Icons/whatsapp-color.png";
+import Medium from "../Assets/Icons/medium-black.png";
 
 export default function Contact() {
 	const SocmedCard = ({ icon, text, link }) => {
@@ -61,6 +62,12 @@ export default function Contact() {
 							text="github.com/fuadazizi"
 							link="https://github.com/fuadazizi"
 						/>
+
+						<SocmedCard
+							icon={Medium}
+							text="medium.com/@nurfuadazizi"
+							link="https://medium.com/@nurfuadazizi"
+						/>						
 					</Row>
 					<Row>
 						<h2 className="fs-medium color-dark-green">Personal Contacts</h2>
